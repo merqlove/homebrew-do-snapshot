@@ -1,6 +1,6 @@
 Homebrew-Do-Snapshot
 ====================
-These formulae duplicate software provided by OS X, though may provide more recent or bugfix versions.
+This formula has [DoSnapshot](http://github.com/merqlove/do_snapshot) CLI, which is helpful tool to automate snapshotting of your Digital Ocean droplets. 
 
 How do I install these formulae?
 --------------------------------
