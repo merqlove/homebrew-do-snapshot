@@ -2,7 +2,7 @@ Homebrew-Do-Snapshot
 ====================
 This formula has [DoSnapshot](http://github.com/merqlove/do_snapshot) CLI, which is helpful tool to automate snapshotting of your Digital Ocean droplets. 
 
-How do I install these formulae?
+How do I install this formula?
 --------------------------------
 Just `brew tap merqlove/homebrew-do-snapshot` and then `brew install do_snapshot`.
 
