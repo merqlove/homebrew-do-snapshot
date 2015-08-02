@@ -12,7 +12,7 @@ class Ruby19 < Requirement # rubocop:disable Style/Documentation
 
     next unless version
     # noinspection RubyArgCount
-    Version.new(version.to_s) >= Version.new('2.0')
+    Version.new(version.to_s) >= Version.new('1.9.3')
   end
 
   def modify_build_environment
@@ -23,7 +23,7 @@ class Ruby19 < Requirement # rubocop:disable Style/Documentation
   end
 
   def message; <<-EOS.undent
-    DoSnapshot requires Ruby >= 2.0.0
+    DoSnapshot requires Ruby >= 1.9.3
   EOS
   end
 end
@@ -45,7 +45,7 @@ class DoSnapshot < Formula # rubocop:disable Style/Documentation
   end
 
   def caveats; <<-EOS.undent
-    do_snapshot requires an installation of Ruby 2.0.0 or greater.
+    do_snapshot requires an installation of Ruby 1.9.3 or greater.
   EOS
   end
 end
