@@ -30,8 +30,8 @@ end
 
 class DoSnapshot < Formula # rubocop:disable Style/Documentation
   homepage 'https://dosnapshot.merqlove.ru/'
-  url 'http://assets.merqlove.ru.s3.amazonaws.com/do_snapshot/do_snapshot-0.5.0.tgz'
-  sha256 '9742e1ca2ff92d64fbfe808aeb51da7a34c69fbe98b64dc7a2d8708effc7b3f7'
+  url 'http://assets.merqlove.ru.s3.amazonaws.com/do_snapshot/do_snapshot-0.6.0.tgz'
+  sha256 '0325eaf712dd8f31e2195f076b851683d9e78a3d623b88c803606cd421d71521'
 
   depends_on Ruby19
 
