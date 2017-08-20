@@ -2,7 +2,7 @@
 # Forked from: https://github.com/Homebrew/homebrew/blob/master/Library/Formula/heroku-toolbelt.rb
 require 'formula'
 
-class Ruby19 < Requirement # rubocop:disable Style/Documentation
+class Ruby20 < Requirement # rubocop:disable Style/Documentation
   fatal true
   default_formula 'ruby'
 
@@ -12,7 +12,7 @@ class Ruby19 < Requirement # rubocop:disable Style/Documentation
 
     next unless version
     # noinspection RubyArgCount
-    Version.new(version.to_s) >= Version.new('1.9.3')
+    Version.new(version.to_s) >= Version.new('2.0.0')
   end
 
   def modify_build_environment
@@ -23,7 +23,7 @@ class Ruby19 < Requirement # rubocop:disable Style/Documentation
   end
 
   def message; <<-EOS.undent
-    DoSnapshot requires Ruby >= 1.9.3
+    DoSnapshot requires Ruby >= 2.0.0
   EOS
   end
 end
@@ -33,7 +33,7 @@ class DoSnapshot < Formula # rubocop:disable Style/Documentation
   url 'http://assets.merqlove.ru.s3.amazonaws.com/do_snapshot/do_snapshot-1.0.0.tgz'
   sha256 '8a9b6b1b3fa857ee72dd36c594aee39354aaef8ab00311a454acb783e941eda5'
 
-  depends_on Ruby19
+  depends_on Ruby20
 
   def install
     libexec.install Dir['*']
@@ -45,7 +45,7 @@ class DoSnapshot < Formula # rubocop:disable Style/Documentation
   end
 
   def caveats; <<-EOS.undent
-    do_snapshot requires an installation of Ruby 1.9.3 or greater.
+    do_snapshot requires an installation of Ruby 2.0.0 or greater.
   EOS
   end
 end
