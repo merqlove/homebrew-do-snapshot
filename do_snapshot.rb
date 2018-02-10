@@ -21,7 +21,7 @@ class Ruby20 < Requirement # rubocop:disable Style/Documentation
     ENV.prepend_path 'PATH', ruby.dirname
   end
 
-  def message; <<-EOS.undent
+  def message; <<-EOS
     DoSnapshot requires Ruby >= 2.0.0
   EOS
   end
@@ -43,7 +43,7 @@ class DoSnapshot < Formula # rubocop:disable Style/Documentation
     system "#{bin}/do_snapshot", 'version'
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<-EOS
     do_snapshot requires an installation of Ruby 2.0.0 or greater.
   EOS
   end
