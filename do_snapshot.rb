@@ -4,7 +4,6 @@ require 'formula'
 
 class Ruby20 < Requirement # rubocop:disable Style/Documentation
   fatal true
-  default_formula 'ruby'
 
   satisfy build_env: false do
     next unless which 'ruby'
